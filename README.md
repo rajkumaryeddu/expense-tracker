@@ -148,13 +148,13 @@ Deploying applications to production.
 This project is for learning and educational purposes.
 
 # 👨‍💻 Author
-Raj Kumar
+Yeddu Rajkumar
 
 # GitHub
 https://github.com/rajkumaryeddu
 
 # LinkedIn
-(Add your LinkedIn profile here)
+https://www.linkedin.com/in/yrk2003/
 
 # ⭐ Support
 If you like this project, please consider giving it a star on GitHub.
