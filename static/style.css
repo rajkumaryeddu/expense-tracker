@@ -1,0 +1,23 @@
+body{
+background:#f4f6f9;
+font-family: Arial;
+}
+
+.card{
+border-radius:12px;
+}
+
+table{
+background:white;
+}
+
+.chart-container{
+width:300px;
+height:300px;
+margin:auto;
+}
+
+canvas{
+max-width:100%;
+max-height:100%;
+}
