@@ -1,12 +1,16 @@
-
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 from datetime import datetime
+import os
 
 app = Flask(__name__)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///expenses.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 db = SQLAlchemy(app)
+
 
 class Expense(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -14,6 +18,12 @@ class Expense(db.Model):
     category = db.Column(db.String(100), nullable=False)
     amount = db.Column(db.Float, nullable=False)
     date = db.Column(db.DateTime, default=datetime.utcnow)
+
+
+# CREATE DATABASE TABLES WHEN SERVER STARTS
+with app.app_context():
+    db.create_all()
+
 
 @app.route('/')
 def index():
@@ -38,6 +48,7 @@ def index():
         values=values
     )
 
+
 @app.route('/add', methods=['POST'])
 def add():
 
@@ -56,6 +67,7 @@ def add():
 
     return redirect('/')
 
+
 @app.route('/delete/<int:id>')
 def delete(id):
 
@@ -66,7 +78,8 @@ def delete(id):
 
     return redirect('/')
 
-@app.route('/edit/<int:id>', methods=['GET','POST'])
+
+@app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit(id):
 
     expense = Expense.query.get_or_404(id)
@@ -84,8 +97,4 @@ def edit(id):
 
 
 if __name__ == '__main__':
-
-    with app.app_context():
-        db.create_all()
-
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
