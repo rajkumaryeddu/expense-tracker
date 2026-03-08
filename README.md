@@ -1,7 +1,7 @@
 # 📊 Expense Tracker Dashboard
 
 A full-stack Expense Tracker Web Application built using Python and Flask that helps users manage and analyze daily expenses through an interactive dashboard.
-The application allows users to add, edit, delete,Search and track expenses, while visualizing spending patterns using charts.
+The application allows users to add, edit, delete, search and track expenses, while visualizing spending patterns using charts.
 
 # 🚀 Live Demo
 Try the application here:
