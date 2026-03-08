@@ -120,7 +120,7 @@ Now run:
 
 # 8. Run the Application
 Run:
-python app.py
+" python app.py " .
 You will see something like:
 Running on http://127.0.0.1:5000
 Open browser and go to:
