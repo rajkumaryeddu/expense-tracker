@@ -107,11 +107,11 @@ Inside static Folder Create a  file  named as style.css,
 Open style.css and write code.
 
 # 6.Open Terminal in VS Code 
-PS C:\Users\RAJ KUMAR\Downloads\expense-tracker-flaskapi>
+PS C:\Users\RAJ KUMAR\Downloads\expense-tracker-flaskapi> ,
 Activate Virtual Environment.
 Now run:
 " env\Scripts\activate ".
-After You will see like this
+After You will see like this ...
 (env) PS C:\Users\RAJ KUMAR\Downloads\expense-tracker-flaskapi>
 
 # 7.Install Required Packages
@@ -127,55 +127,34 @@ Open browser and go to:
 http://127.0.0.1:5000
 Your Expense Tracker will open.
 
-
-
-
-
-
-
-
-
-
-📈 Future Improvements
-
+# 📈 Future Improvements
 Possible enhancements for this project:
-
 • User authentication system
 • Monthly expense analytics
 • Export reports to Excel / CSV
 • Budget planning feature
 • Dark mode UI
 
-🎯 Learning Outcomes
-
+# 🎯 Learning Outcomes
 This project helped me learn:
+Flask web development,
+Database integration using SQLAlchemy,
+CRUD operations,
+Dashboard design,
+Data visualization with charts,
+Deploying applications to production.
 
-Flask web development
-
-Database integration using SQLAlchemy
-
-CRUD operations
-
-Dashboard design
-
-Data visualization with charts
-
-Deploying applications to production
-
-📜 License
-
+# 📜 License
 This project is for learning and educational purposes.
 
-👨‍💻 Author
-
+# 👨‍💻 Author
 Raj Kumar
 
-GitHub
+# GitHub
 https://github.com/rajkumaryeddu
 
-LinkedIn
+# LinkedIn
 (Add your LinkedIn profile here)
 
-⭐ Support
-
+# ⭐ Support
 If you like this project, please consider giving it a star on GitHub.
