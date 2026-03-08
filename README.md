@@ -17,6 +17,7 @@ Main features of the dashboard:
 • Add new expenses
 • Edit existing expenses
 • Delete expenses
+• Search expenses by Title, Category, Amount, Date
 • Automatic date tracking
 • Dashboard showing total expenses
 • Category-wise expense chart
@@ -24,15 +25,15 @@ Main features of the dashboard:
 
 # ⚙️ Tech Stack
 # Backend
-Python
-Flask
+Python,
+Flask,
 SQLAlchemy
 # Database
 SQLite
 # Frontend
-HTML
-CSS
-Bootstrap
+HTML,
+CSS,
+Bootstrap,
 JavaScript
 # Data Visualization
 Chart.js
@@ -57,12 +58,12 @@ Search any Expense
 
 # 📊 Application Workflow
 
-User opens the dashboard
-Adds a new expense
-Flask processes the request
-Expense is stored in the SQLite database
-Dashboard updates automatically
-Chart.js visualizes category-wise spending
+1.User opens the dashboard
+2.Adds a new expense
+3.Flask processes the request
+4.Expense is stored in the SQLite database
+5.Dashboard updates automatically
+6.Chart.js visualizes category-wise spending
 
 # 🛠️ Installation (Run Locally)
 
