@@ -1,19 +1,15 @@
 # 📊 Expense Tracker Dashboard
 
 A full-stack Expense Tracker Web Application built using Python and Flask that helps users manage and analyze daily expenses through an interactive dashboard.
-The application allows users to add, edit, delete, and track expenses, while visualizing spending patterns using charts.
+The application allows users to add, edit, delete,Search and track expenses, while visualizing spending patterns using charts.
 
 # 🚀 Live Demo
 Try the application here:
-
 # https://expense-tracker-h6s2.onrender.com
-
 Deployed using Render.
 
 # 🖥️ Project Preview
-
 Main features of the dashboard:
-
 • Add new expenses
 • Edit existing expenses
 • Delete expenses
@@ -54,18 +50,89 @@ The application automatically calculates total expenses.
 # Category Analytics
 A pie chart visualization shows spending distribution across categories.
 # Search an Expense
-Search any Expense
+Search any Expense by Title, Category, Amount and Date.
 
 # 📊 Application Workflow
 
-1.User opens the dashboard
-2.Adds a new expense
-3.Flask processes the request
-4.Expense is stored in the SQLite database
-5.Dashboard updates automatically
-6.Chart.js visualizes category-wise spending
+• User opens the expense tracker dashboard in the browser.
+• The user adds a new expense by entering title, category, and amount.
+• The request is sent to the backend built using Flask.
+• The application processes the request and stores the expense in the SQLite database using SQLAlchemy.
+• The dashboard automatically refreshes and displays the updated expense list.
+• The total expense amount is recalculated dynamically.
+• Expense data is grouped by category.
+• Chart.js generates a pie chart to visualize category-wise spending.
+• Users can search, edit, or delete expenses from the table.
 
-# 🛠️ Installation (Run Locally)
+# 🛠️ Installation and Execution Steps 
+# 1. Install Python
+Install the latest Python.
+Download from
+https://python.org .
+After installation check:
+python --version .
+You should see something like:
+Python 3.x.x .
+
+# 2. Install Git
+Install Git.
+Download from
+https://git-scm.com .
+Check installation:
+git --version .
+
+# 3.Open PowerShell 
+Inside PowerShell, run this command:
+"Set-ExecutionPolicy RemoteSigned -Scope CurrentUser" .
+Then press Enter.
+
+# 4.Create Your First Project Folder
+Create a folder on your computer.
+expense-tracker-flaskapi.
+Open that folder in VS Code.
+
+# 5.Go To Your Project Folder expense-tracker-flaskapi
+
+i) Inside Project Folder Create a File named as app.py ,
+Open app.py and write code. 
+
+ii) Inside Project Folder Create a Folder named as templates, 
+Inside templates Folder Create a File Named as index.html,
+Open index.html and write code.
+Inside templates Folder Create a File named as edit.html,
+Open edit.html and write code.
+
+iii) Inside Project Folder Create a Folder named as static,
+Inside static Folder Create a  file  named as style.css,
+Open style.css and write code.
+
+# 6.Open Terminal in VS Code 
+PS C:\Users\RAJ KUMAR\Downloads\expense-tracker-flaskapi>
+Activate Virtual Environment.
+Now run:
+" env\Scripts\activate ".
+After You will see like this
+(env) PS C:\Users\RAJ KUMAR\Downloads\expense-tracker-flaskapi>
+
+# 7.Install Required Packages
+Now run:
+" pip install flask flask_sqlalchemy "
+
+# 8. Run the Application
+Run:
+python app.py
+You will see something like:
+Running on http://127.0.0.1:5000
+Open browser and go to:
+http://127.0.0.1:5000
+Your Expense Tracker will open.
+
+
+
+
+
+
+
 
 
 
